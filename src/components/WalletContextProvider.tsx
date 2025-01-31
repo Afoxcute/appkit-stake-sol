@@ -25,8 +25,8 @@ const solanaWeb3JsAdapter = new SolanaAdapter({
 
 // Create metadata object
 const metadata = {
-  name: 'Your App Name',
-  description: 'Your App Description',
+  name: 'Appkit-stake-sol',
+  description: 'Stake and vest your SOL for rewards',
   url: window.location.origin, // This will automatically use your domain
   icons: ['your-icon-url'] // Replace with your app's icon URL
 };

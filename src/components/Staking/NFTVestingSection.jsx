@@ -377,7 +377,7 @@ const NFTVestingSection = () => {
                 <div className="dark:text-subtitle-dark text-subtitle-light text-xs">
                   Total Earnings
                 </div>
-                <div className=" text-base">{claimableReward} AZLs</div>
+                <div className=" text-base">{claimableReward} SOLs</div>
               </div>
             </div>
           </div>
@@ -400,7 +400,7 @@ const NFTVestingSection = () => {
                   Available for withdraw
                 </div>
                 <div className="  text-base">
-                  Claim {claimableReward} AZLs
+                  Claim {claimableReward} SOLs
                 </div>
               </div>
             </div>

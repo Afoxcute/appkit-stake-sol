@@ -46,23 +46,23 @@ const Mainboard = () => {
     <div className="h-full flex flex-col  items-center">
       <div className="flex flex-col w-11/12 gap-4 ">
         <div className="flex flex-row items-center justify-start dark:text-white text-title-light gap-4">
-          <img
+          {/* <img
             className="w-14 hidden dark:flex"
             alt=""
             src="/icons/logo1.svg"
-          />
-          <img
+          /> */}
+          {/* <img
             className="w-14 dark:hidden flex"
             alt=""
             src="/icons/logo1-light.svg"
-          />
+          /> */}
           <h1 className="text-2xl font-semibold">Dashboard Overview</h1>
         </div>
         <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 text-white">
           <StatItem
             iconDark="/icons/staking.svg"
             iconLight="/icons/staking-light.svg"
-            value={`${totalStaked} AZLs`}
+            value={`${totalStaked} SOLs`}
             title="Total Staked"
           />
 
@@ -76,7 +76,7 @@ const Mainboard = () => {
           <StatItem
             iconDark="/icons/earning.svg"
             iconLight="/icons/earning-light.svg"
-            value={`${totalReward} AZLs`}
+            value={`${totalReward} SOLs`}
             title="Total Earnings"
           />
 
@@ -90,7 +90,7 @@ const Mainboard = () => {
               <iframe
                 width="100%"
                 className="size-full min-h-[400px] md:min-h-[600px] object-cover"
-                src="https://www.birdeye.so/tv-widget/2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv?chain=solana&chartType=bar&chartInterval=3&chartLeftToolbar=show.so/tv-widget/2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv?chain=solana&chartType=bar&chartInterval=3&chartLeftToolbar=show"
+                src="https://www.birdeye.so/tv-widget/So11111111111111111111111111111111111111112?chain=solana&chartType=bar&chartInterval=3&chartLeftToolbar=show.so/tv-widget/2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv?chain=solana&chartType=bar&chartInterval=3&chartLeftToolbar=show"
               ></iframe>
             </div>
           </div>

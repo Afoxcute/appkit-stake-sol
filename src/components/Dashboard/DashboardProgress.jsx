@@ -15,7 +15,7 @@ const DashboardProgress = () => {
           </div>
           <div className="flex flex-row items-center justify-start gap-3 text-lg text-white">
             <div className="w-full  dark:text-white text-title-light font-semibold inline-block h-5 shrink-0">
-              154,189 N01zet
+              154,189 SOL
             </div>
             <div className="rounded bg-amber-800 flex flex-row items-center justify-center text-xs px-1 py-0.5">
               <div className="font-semibold ">{vested}%</div>
@@ -31,7 +31,7 @@ const DashboardProgress = () => {
           </div>
           <div className="flex flex-row items-center justify-start text-lg text-white">
             <div className="w-full  dark:text-white text-title-light font-semibold inline-block h-5 shrink-0">
-              240,000 N01zet
+              240,000 SOL
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ const DashboardProgress = () => {
       </div>
       <div className="flex flex-row items-center justify-start gap-4 text-smi dark:text-white text-title-light ">
         <div className="flex gap-2 items-baseline">
-          <span className="font-semibold">{`130,557 N01zet`}</span>
+          <span className="font-semibold">{`130,557 SOL`}</span>
           <span className="font-light text-xs">released</span>
         </div>
         <div className="rounded bg-amber-600 flex flex-row items-center justify-center text-xs px-1 py-0.5">

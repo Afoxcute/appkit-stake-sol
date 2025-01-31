@@ -41,11 +41,11 @@ const DesktopHeader = () => {
         </div>
       </div>
       <div className="time-menu-root h-12 min-w-44">
-        <div className="relative rounded-[8px] flex items-center justify-between p-1  text-white text-1xl w-45 h-full border-2 dark:border-[#9A6440] bg-transparent text-[#9A6440] bg-gradient-to-r dark:from-[#994D0E] dark:to-[#E2914F] from-[#D97A2B] to-[#E2914F]">
+        {/* <div className="relative rounded-[8px] flex items-center justify-between p-1  text-white text-1xl w-45 h-full border-2 dark:border-[#9A6440] bg-transparent text-[#9A6440] bg-gradient-to-r dark:from-[#994D0E] dark:to-[#E2914F] from-[#D97A2B] to-[#E2914F]">
           <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv&fixed=in" target="_blank" rel="noopener noreferrer" >
             <span className="">{"Buy AZLs on Raydium"}</span>
           </a>
-        </div>
+        </div> */}
       </div>
       <div className="relative mx-10">
         <div className="rounded-2">
@@ -118,7 +118,7 @@ const MobileHeader = () => {
           <div className="hidden md:block time-menu-root h-12 mx-0 md:mx-2">
             <div className="relative rounded-[8px] flex items-center justify-between p-1  text-white text-1xl w-182 h-full border-2 dark:border-[#9A6440] bg-transparent text-[#9A6440] bg-gradient-to-r dark:from-[#994D0E] dark:to-[#E2914F] from-[#D97A2B] to-[#E2914F]">
               <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv&fixed=in" target="_blank" rel="noopener noreferrer" >
-                <span className="">{"Buy AZLs on Raydium"}</span>
+                <span className="">{""}</span>
               </a>
             </div>
           </div>
@@ -158,11 +158,11 @@ const MobileHeader = () => {
             </Link>
           </div>
           <div className="block md:hidden time-menu-root h-12 mx-0 md:mx-2">
-            <div className="relative rounded-[8px] flex items-center justify-between p-1  text-white text-1xl w-182 h-full border-2 dark:border-[#9A6440] bg-transparent text-[#9A6440] bg-gradient-to-r dark:from-[#994D0E] dark:to-[#E2914F] from-[#D97A2B] to-[#E2914F]">
+            {/* <div className="relative rounded-[8px] flex items-center justify-between p-1  text-white text-1xl w-182 h-full border-2 dark:border-[#9A6440] bg-transparent text-[#9A6440] bg-gradient-to-r dark:from-[#994D0E] dark:to-[#E2914F] from-[#D97A2B] to-[#E2914F]">
               <a href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=2zMMhcVQEXDtdE6vsFS7S7D5oUodfJHE8vd1gnBouauv&fixed=in" target="_blank" rel="noopener noreferrer" >
                 <span className="">{"Buy AZLs on Raydium"}</span>
               </a>
-            </div>
+            </div> */}
           </div>
           <button onClick={() => setIsMenuOpen(false)}>
             <svg

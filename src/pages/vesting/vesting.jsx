@@ -16,16 +16,16 @@ const VestingPage = () => {
   const [tokensAllocated, setTokensAllocated] = useState(7000000000);
   const [cliffAmount, setCliffAmount] = useState(10000);
   const [totalDuration, setTotalDuration] = useState(14.2);
-  const [stakingType, setStakingType] = useState("Vesting");
+  const [vestingType, setVestingType] = useState("Vesting");
 
   const onTabSelected = (type) => {
-    setStakingType(type);
+    setVestingType(type);
   };
   return (
     <div className="h-full flex flex-col  items-center">
       <div className="h-full flex flex-col w-11/12 gap-4 ">
         <div className="flex flex-row items-center justify-start  gap-4">
-          <img
+          {/* <img
             className="w-14 hidden dark:flex"
             alt=""
             src="/icons/logo1.svg"
@@ -34,22 +34,22 @@ const VestingPage = () => {
             className="w-14 dark:hidden flex"
             alt=""
             src="/icons/logo1-light.svg"
-          />
+          /> */}
           <h1 className="text-2xl font-semibold dark:text-white text-title-light">
-            N01zet AZLs Vesting
+            Appkit SOLs Vesting
           </h1>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 text-white gap-3">
           <StatItem
             iconDark="/icons/logo1.svg"
             iconLight="/icons/logo1-light.svg"
-            value={`${tokensAllocated} AZLs`}
+            value={`${tokensAllocated} SOLs`}
             title="Tokens Allocated"
           />
           <StatItem
             iconDark="/icons/logo1.svg"
             iconLight="/icons/logo1-light.svg"
-            value={`${cliffAmount} AZLs`}
+            value={`${cliffAmount} SOLs`}
             title="Cliff Amount"
           />
           <StatItem
@@ -63,7 +63,7 @@ const VestingPage = () => {
           <div
             className={clsx(
               "h-full flex flex-col justify-center cursor-pointer",
-              stakingType === "Vesting" ? "border-b-2 border-[#FB9037]" : ""
+              vestingType === "Vesting" ? "border-b-2 border-[#FB9037]" : ""
             )}
           >
             <div
@@ -76,7 +76,7 @@ const VestingPage = () => {
           <div
             className={clsx(
               "h-full flex flex-col justify-center cursor-pointer",
-              stakingType === "NFTVesting" ? " border-b-2 border-[#FB9037]" : ""
+              vestingType === "NFTVesting" ? " border-b-2 border-[#FB9037]" : ""
             )}
           >
             <div
@@ -87,8 +87,8 @@ const VestingPage = () => {
             </div>
           </div>
         </div>
-        {stakingType === "Vesting" && <TokenVestingSection />}
-        {stakingType === "NFTVesting" && <NFTVestingSection />}
+        {vestingType === "Vesting" && <TokenVestingSection />}
+        {vestingType === "NFTVesting" && <NFTVestingSection />}
       </div>
     </div>
   );

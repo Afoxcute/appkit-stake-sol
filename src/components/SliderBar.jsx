@@ -24,25 +24,29 @@ import {
   sendAndConfirmRawTransaction,
 } from "@solana/web3.js";
 import * as anchor from "@project-serum/anchor";
+import { useAppKitAccount } from '@reown/appkit/react'; // Changed from useWallet
+
 
 const SliderBar = () => {
   const location = useLocation();
   const { isDarkMode } = useTheme();
   const SOLANA_HOST = clusterApiUrl("mainnet-beta");
   const connection = new anchor.web3.Connection(SOLANA_HOST);
+  const { publicKey, connected, signTransaction, signAllTransactions } = useAppKitAccount();
 
-  const wallet = useWallet();
+
+  // const wallet = useWallet();
   const [isAdmin, setIsAdmin] = useState(false);
 
   const getAdmin = () => {
-    if (wallet.publicKey == ADMINWALLET.toBase58()) {
+    if (publicKey == ADMINWALLET.toBase58()) {
       setIsAdmin(true);
     }
   };
 
   useEffect(() => {
     getAdmin();
-  }, [connection, wallet]);
+  }, [connection, publicKey]);
 
   return (
     <div className="w-full min-h-screen flex flex-col bg-secondary-bg dark:bg-secondary-dark-bg font-bold text-[#6B5D53]  dark:text-[#EFEFEF]">
@@ -53,11 +57,11 @@ const SliderBar = () => {
               to="/dashboard"
               className="MuiTypography-root MuiLink-root justify-self-start MuiLink-underlineHover MuiTypography-colorPrimary"
             >
-              <img
+              {/* <img
                 className="w-4/5 h-24 mx-auto hidden dark:flex"
                 src="/icons/Logo.svg"
                 alt="no image"
-              />
+              /> */}
               <img
                 className="w-4/5 h-24 mx-auto dark:hidden flex"
                 src="/icons/logo-light.svg"

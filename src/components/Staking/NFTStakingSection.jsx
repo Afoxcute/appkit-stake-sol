@@ -331,7 +331,7 @@ const NFTStakingSection = () => {
                 <div className="text-xs dark:text-subtitle-dark text-subtitle-light">
                   Total Earnings
                 </div>
-                <div className="text-base ">{claimableReward} AZLs</div>
+                <div className="text-base ">{claimableReward} SOLs</div>
               </div>
             </div>
           </div>
@@ -353,7 +353,7 @@ const NFTStakingSection = () => {
                 <div className="text-xs dark:text-subtitle-dark text-subtitle-light">
                   Available for withdraw
                 </div>
-                <div className="text-base ">Claim {claimableReward} AZLs</div>
+                <div className="text-base ">Claim {claimableReward} SOLs</div>
               </div>
             </div>
             <div className="h-11">
